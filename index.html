@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#8b5a2b">
+<title>Desafio dos R$ 10.000</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="hero">
+    <div>
+      <div class="eyebrow">MEU DESAFIO FINANCEIRO</div>
+      <h1>💰 Desafio dos R$ 10.000</h1>
+      <p>Marque cada valor que você conseguir guardar.</p>
+    </div>
+    <button id="loginBtn" class="ghost">Entrar</button>
+  </header>
+
+  <main>
+    <section class="cards">
+      <article><span>Já guardado</span><strong id="saved">R$ 0,00</strong></article>
+      <article><span>Falta</span><strong id="remaining">R$ 10.000,00</strong></article>
+      <article><span>Concluído</span><strong id="percent">0%</strong></article>
+    </section>
+
+    <section class="progressBox">
+      <div class="row"><b>Progresso do desafio</b><b id="count">0 / 210</b></div>
+      <div class="bar"><i id="bar"></i></div>
+    </section>
+
+    <section class="panel">
+      <div class="panelTop">
+        <div>
+          <h2>Minha tabela</h2>
+          <p>Clique em um valor para marcar como guardado.</p>
+        </div>
+        <div class="actions">
+          <button id="all">Marcar todos</button>
+          <button id="clear">Desmarcar</button>
+          <button id="reset" class="danger">Zerar</button>
+        </div>
+      </div>
+      <div class="legend"><span><i></i> disponível</span><span><i class="done"></i> guardado</span></div>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <b>Desafio dos R$ 10.000</b>
+    <span>Seu progresso fica salvo neste navegador nesta versão.</span>
+  </footer>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="modalCard">
+    <button id="close" class="close">×</button>
+    <div class="modalIcon">🔐</div>
+    <h2>Conta online</h2>
+    <p>A próxima etapa é conectar este site a um serviço de login e banco de dados, para seu progresso aparecer em qualquer celular ou computador.</p>
+    <label>E-mail<input type="email" placeholder="seuemail@exemplo.com"></label>
+    <label>Senha<input type="password" placeholder="••••••••"></label>
+    <button class="primary" id="demoLogin">Entrar na demonstração</button>
+    <small>Esta versão ainda não envia seus dados para a internet.</small>
+  </div>
+</div>
+<script>window.CHALLENGE_VALUES = [50, 20, 20, 20, 100, 100, 50, 50, 50, 50, 20, 20, 50, 20, 20, 20, 20, 50, 20, 20, 50, 50, 20, 10, 100, 50, 20, 100, 20, 100, 100, 50, 20, 20, 50, 20, 20, 50, 50, 20, 50, 20, 50, 50, 20, 20, 20, 20, 500, 50, 50, 50, 50, 50, 50, 20, 50, 20, 20, 20, 50, 20, 50, 50, 20, 20, 20, 20, 50, 50, 20, 100, 50, 20, 20, 50, 50, 50, 20, 50, 20, 20, 20, 50, 50, 20, 50, 50, 50, 50, 5, 50, 20, 100, 50, 20, 20, 50, 50, 20, 50, 50, 20, 20, 20, 50, 50, 20, 20, 50, 50, 50, 50, 20, 20, 50, 50, 20, 20, 50, 50, 50, 20, 50, 50, 20, 50, 100, 50, 20, 20, 20, 20, 20, 100, 100, 50, 50, 50, 20, 50, 50, 500, 50, 20, 20, 20, 50, 100, 50, 100, 100, 50, 20, 20, 100, 20, 50, 50, 50, 20, 50, 50, 20, 20, 20, 50, 100, 50, 20, 20, 20, 50, 50, 50, 50, 100, 20, 20, 5, 50, 10, 50, 50, 50, 50, 500, 50, 50, 20, 20, 50, 20, 50, 20, 50, 20, 50, 20, 50, 50, 100, 20, 20, 50, 50, 50, 50, 20, 50];</script>
+<script src="app.js"></script>
+</body>
+</html>
